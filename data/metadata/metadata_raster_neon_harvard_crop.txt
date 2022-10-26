@@ -1,0 +1,6 @@
+Class: RasterLayer
+Extent: 731453, 733150, 4712471, 4713838  (xmin, xmax, ymin, ymax)
+Coordinate Reference System (CRS): WGS 84 / UTM zone 18N ["+proj=utm +zone=18 +datum=WGS84 +units=m +no_defs]
+Resolution: 1, 1  (x, y)
+Columns: 1697
+Rows: 1397

@@ -1,0 +1,7 @@
+﻿Variable;Description;Data type;Example;
+Id;Unique identification for each plant individual;Number;13;
+SepalLengthCm;Describes the size of the individual's sepal length (in cm);Number;5.3;
+SepalWidthCm;Describes the size of the individual's sepal width (in cm);Number;3.8;
+PetalLengthCm;Describes the size of the individual's petal length (in cm);Number;1.5;
+PetalWidthCm;Describes the size of the individual's petal width (in cm);Number;0.4;
+Species;Species name;String;"""Iris_setosa"""
