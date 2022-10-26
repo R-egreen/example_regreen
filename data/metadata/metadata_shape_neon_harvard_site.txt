@@ -1,0 +1,4 @@
+Geometry type: polygon
+Coordinate Reference System (CRS): WGS 84 / UTM zone 18N ["+proj=utm +zone=18 +datum=WGS84 +units=m +no_defs]
+Scale: 1:1.100.000
+Attributes: Id
