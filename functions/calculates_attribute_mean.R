@@ -9,31 +9,23 @@
 #' @return a list containing an error flag and a vector with the average
 #' values of the species attributes.
 #' @examples
-#' species <- rep(c("setosa","versicolor","virginica"),times=20)
-#' attributes <- matrix(runif(n=60, min=0, max=5), nrow=15)
-#' df <- data.frame(attributes,species)
+#' species <- rep(c("setosa", "versicolor", "virginica"), times = 20)
+#' attributes <- matrix(runif(n = 60, min = 0, max = 5), nrow = 15)
+#' df <- data.frame(attributes, species)
 #' avg_sepal_setosa <- calculates_attribute_mean(df, "setosa", "X2")
-
+#'
 calculates_attribute_mean <- function(df,
-                                species_name,
-                                attribute) {
-
+                                      species_name,
+                                      attribute) {
   mean_size <- tryCatch(
     {
-      spp_data  <- df[df$species == species_name, ]
-      attribute_data  <- spp_data[, grepl(attribute, colnames(spp_data))]
+      spp_data <- df[df$species == species_name, ]
+      attribute_data <- spp_data[, grepl(attribute, colnames(spp_data))]
       mean_size <- sapply(Filter(is.numeric, attribute_data), mean)
-
-      list(
-           error = NULL,
-           result = mean_size
-          )
+      return(mean_size)
     },
     error = function(e) {
-      list(
-        error = e$message,
-        result = NULL
-          )
+      return(NULL)
     }
   )
 }
